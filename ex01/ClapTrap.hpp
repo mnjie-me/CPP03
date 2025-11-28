@@ -6,7 +6,7 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 11:27:12 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/11/28 11:17:11 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2025/11/28 12:57:37 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 class ClapTrap
 
 {
-	private:
+	protected:
 
 		std::string name;
 		int			hitPoints;

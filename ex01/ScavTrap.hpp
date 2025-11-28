@@ -6,7 +6,7 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 10:57:43 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/11/28 12:46:25 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2025/11/28 12:56:10 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,6 @@
 class ScavTrap : public ClapTrap
 
 {
-	private:
-
-		std::string name;
-		int			hitPoints;
-		int			energyPoints;
-		int			attackDamage;
-	
 	public:
 
 		ScavTrap();
