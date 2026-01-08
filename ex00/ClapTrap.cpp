@@ -6,7 +6,7 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 11:32:32 by mari-cruz         #+#    #+#             */
-/*   Updated: 2026/01/08 11:47:57 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 12:11:16 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,10 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& obj)
 	return (*this);
 }
 
-ClapTrap::~ClapTrap() {}
+ClapTrap::~ClapTrap()
+{
+	std::cout << "ClapTrap destructor called" << std::endl;
+}
 
 void ClapTrap::attack(const std::string& target)
 {

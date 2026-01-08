@@ -6,7 +6,7 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 11:32:32 by mari-cruz         #+#    #+#             */
-/*   Updated: 2026/01/08 12:04:31 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 12:25:08 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 ClapTrap::ClapTrap()
 	: name(""), hitPoints(10), energyPoints(10), attackDamage(0)
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "ClapTrap default constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string n)
 	: name(n), hitPoints(10), energyPoints(10), attackDamage(0)
 {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "ClapTrap constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& obj)
@@ -30,7 +30,7 @@ ClapTrap::ClapTrap(const ClapTrap& obj)
 	this->hitPoints = obj.hitPoints;
 	this->energyPoints = obj.energyPoints;
 	this->attackDamage = obj.attackDamage;
-	std::cout << "Copy Constructor called" << std::endl;
+	std::cout << "ClapTrap copy Constructor called" << std::endl;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& obj)
@@ -42,7 +42,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& obj)
 		this->energyPoints = obj.energyPoints;
 		this->attackDamage = obj.attackDamage;
 	}
-	std::cout << "Copy assignment operator called" << std::endl;
+	std::cout << "ClapTrap copy assignment operator called" << std::endl;
 	return (*this);
 }
 

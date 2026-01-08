@@ -6,7 +6,7 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 12:34:54 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/11/30 12:48:13 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 12:21:38 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@ int main(void)
 {
 	
 	ClapTrap a;
-	ClapTrap b("Caroline");
+	ClapTrap b("ClapTrap");
 	ClapTrap c;
-	ScavTrap n("Diana");
+	ScavTrap n("ScravTrap");
 	ScavTrap m;
-	FragTrap x("Alexia");
+	FragTrap x("FragTrap");
 	FragTrap y;
 	c = b;
 	m = n;
