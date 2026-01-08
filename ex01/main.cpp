@@ -6,22 +6,12 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 12:34:54 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/11/28 12:48:59 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 12:09:52 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
-
-int ClapTrap::getHitPoints()
-{
-	return (hitPoints);
-}
-
-int ClapTrap::getEnergyPoints()
-{
-	return (energyPoints);
-}
 
 void ClapTrap::stats()const
 {

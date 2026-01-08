@@ -6,14 +6,13 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 11:49:10 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/11/28 12:46:02 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 11:57:54 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap() : ClapTrap()
+ScavTrap::ScavTrap() : ClapTrap("ScavTrap")
 {
 	hitPoints = 100;
     energyPoints = 50;
@@ -26,7 +25,7 @@ ScavTrap::ScavTrap(std::string n) : ClapTrap(n)
 	hitPoints = 100;
     energyPoints = 50;
     attackDamage = 20;
-	std::cout << name << "ScavTrap constructor called" << std::endl;
+	std::cout << "ScavTrap " << name << " constructor called" << std::endl;
 }
 
 ScavTrap::~ScavTrap()
