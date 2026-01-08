@@ -6,7 +6,7 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 11:32:32 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/11/27 13:09:44 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 11:47:57 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& obj)
 		this->energyPoints = obj.energyPoints;
 		this->attackDamage = obj.attackDamage;
 	}
-	std::cout << "Constructor assignment called" << std::endl;
+	std::cout << "Copy assignment operator called" << std::endl;
 	return (*this);
 }
 
@@ -64,19 +64,18 @@ void ClapTrap::attack(const std::string& target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-	hitPoints -= amount;
 	if (hitPoints <= 0)
 	{
-		std::cout << "ClapTrap died!" << std::endl;
+		std::cout << "ClapTrap is already dead!" << std::endl;
 		return ;
 	}
-	if (energyPoints <= 0)
-	{
-		std::cout << "ClapTrap has no energy!" << std::endl;
-		return ;
-	}
-	std::cout << "ClapTrap " << name 
-	<< " was attacked, causing " << amount
+	if (hitPoints <= (int)amount)
+		hitPoints = 0;
+	else
+		hitPoints -= amount;
+
+	std::cout << "ClapTrap " << name
+	<< " takes " << amount
 	<< " points of damage!" << std::endl;
 }
 
