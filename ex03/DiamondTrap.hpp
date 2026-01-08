@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   DiamonTrap.hpp                                     :+:      :+:    :+:   */
+/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 10:45:27 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/12/04 12:31:49 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 12:58:51 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
-class DiamonTrap: public ScavTrap, public FragTrap
+class DiamondTrap
+	: public ScavTrap
+	, public FragTrap
 
 {
 	private:
@@ -26,9 +28,11 @@ class DiamonTrap: public ScavTrap, public FragTrap
 
 	public:
 
-		DiamonTrap();
-		DiamonTrap(std::string n);
-		~DiamonTrap();
+		DiamondTrap();
+		DiamondTrap(std::string n);
+		DiamondTrap(const DiamondTrap& obj);
+		DiamondTrap& operator=(const DiamondTrap& obj);
+		~DiamondTrap();
 
 		void attack(const std::string& target);
 		void whoAmI();

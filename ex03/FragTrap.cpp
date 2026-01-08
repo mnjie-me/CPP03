@@ -6,30 +6,32 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/30 12:35:25 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/12/04 12:34:22 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 13:05:28 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
-#include "ClapTrap.hpp"
 
-FragTrap::FragTrap() : ClapTrap()
+FragTrap::FragTrap()
 {
-	std::cout << "FragTrap default constructor called " << name << std::endl;
+	hitPoints = 100;
+	energyPoints = 100;
+	attackDamage = 30;
+	std::cout << "FragTrap default constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(std::string n) : ClapTrap()
+FragTrap::FragTrap(std::string n)
 {
-	(void)n;
-	this->hitPoints = 100;
-	this->energyPoints = 100;
-	this->attackDamage = 30;
-	std::cout << name << " FragTrap constructor called" << std::endl;
+	name = n;
+	hitPoints = 100;
+	energyPoints = 100;
+	attackDamage = 30;
+	std::cout << "FragTrap constructor called" << std::endl;
 }
 
 FragTrap::~FragTrap()
 {
-	std::cout << "FragTrap destructor called " << name << std::endl;
+	std::cout << "FragTrap destructor called" << std::endl;
 }
 
 void FragTrap::highFivesGuys(void)

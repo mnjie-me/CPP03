@@ -6,14 +6,14 @@
 /*   By: mari-cruz <mari-cruz@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 12:34:54 by mari-cruz         #+#    #+#             */
-/*   Updated: 2025/12/04 12:45:01 by mari-cruz        ###   ########.fr       */
+/*   Updated: 2026/01/08 12:37:00 by mari-cruz        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
-#include "DiamonTrap.hpp"
+#include "DiamondTrap.hpp"
 
 void ClapTrap::stats()const
 {
@@ -26,9 +26,9 @@ void ClapTrap::stats()const
 int main(void)
 {
 	
-	ClapTrap a("Ana");
-	DiamonTrap d("Petra");
-	DiamonTrap e;
+	ClapTrap a("ClapTrap");
+	DiamondTrap d("DiamondTrap");
+	DiamondTrap e;
 	e = d;
 	int damage = 5;
 	int repair = 2;
